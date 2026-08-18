@@ -1,0 +1,371 @@
+ * {
+    padding: 0;
+    margin: 0;
+ }
+
+ body {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(41, 43, 44);
+ }
+
+ .nav-bar {
+     display: flex;
+     position: fixed;
+     width: 100vw;
+     justify-content: space-around;
+     align-items: center;
+     padding: 0.5rem 1rem;
+     background-color: white;
+     border-bottom: 1px solid #ccc;
+ }
+
+ .nav-bar ul {
+  list-style-type: none;
+ }
+
+ .dropdown {
+  position: relative;
+ }
+
+  .dropdown-menu {
+  display: none;
+ }
+
+ .dropdown-menu li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+ }
+
+ .dropdown a {
+  color: #0000008C;
+  font-weight: 600;
+ }
+
+ .dropdown a:hover {
+  color: rgb(41, 43, 44)
+ }
+
+ .dropdown:hover .dropdown-menu {
+  display: block;
+  position: fixed;
+  top: 4%;
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem 1rem;
+  line-height: 1.5rem;
+  border-radius: 6px;
+  z-index: 1000;
+ }
+ .dropdown:hover .component-dropdown-menu {
+  padding: 0px;
+  right: 22%;
+ }
+
+ .nav-menu-items {
+  display: flex;
+  position: relative;
+  gap: 2.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+ }
+
+ .component-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ }
+
+ .component-picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 480px;
+  background: url("../images/component-background.jpg") center/cover no-repeat;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+ }
+
+ .component-picture p {
+  color: white;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 600;
+  width: 150px;
+ }
+
+ .component-picture button {
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+ } 
+ 
+ .component-picture p, .component-picture button {
+  transform: translateX(-50px);
+ }
+ .component-picture button:hover {
+  color: black;
+  background-color: white;
+ }
+
+ .component-list {
+  column-count: 3;
+  column-gap: 2rem;
+  padding: 2rem 3rem;
+ }
+
+
+.dropdown-menu li {
+  position: relative;
+}
+
+
+.dropdown-menu li > ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;     
+  min-width: 180px;
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  border-radius: 3px;
+  white-space: nowrap;
+  z-index: 1001;    
+}
+
+.dropdown-menu li:hover > ul {
+  display: block;
+}
+ 
+.fa-chevron-down, .fa-chevron-right {
+  font-size: 0.6rem;
+}
+
+.fa-chevron-right {
+  text-align: right;
+}
+
+ .hero {
+   display: flex;
+   height: calc(100vh - 10px);
+   justify-content: flex-end;
+   align-items: center;
+   flex-direction: column;
+ }
+
+ .hero-text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .hero-text h6 {
+   text-transform: uppercase;
+   letter-spacing: 0.2rem;
+   font-size: 0.75rem;
+   font-weight: 600;
+   margin: 0rem 0rem 4rem;
+ }
+ .hero-text h2 span {
+   color: #007AFF;
+ }
+ .hero-text h2 {
+   font-weight: 400;
+   font-size: 3rem;
+   margin-bottom: 1rem;
+ }
+
+ .hero-text div button {
+   font-size: 0.75rem;
+   padding: 0.5rem 1.5rem;
+   background-color: #007AFF;
+   border: 3px solid #007AFF;
+   border-radius: 3px;
+   color: white;
+   font-weight: bold;
+ }
+
+ .hero-text div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+   margin: 5rem 0rem 0.5rem;
+ }
+
+ .hero-text div a {
+   color: #007AFF;
+   text-decoration: none;
+   font-size: 0.75rem;
+
+ }
+ .hero-image {
+   max-width: 1200px;
+ }
+
+ .purchase-section p, .hero-text p {
+   font-size: 1.5rem;
+   font-weight: 300;
+ }
+
+ .picture-gallery {
+     column-count: 3;
+     column-gap: 2rem;
+ }
+
+.picture-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ .gallery-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    break-inside: avoid;
+    padding: 0rem 1rem;
+    margin-bottom: 3rem;
+ }
+
+ a h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 6px;
+    padding: 12px 0px;
+ }
+
+ .gallery-item img {
+    display: block;
+ }
+
+  .link-text, .advert-text p span {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+ }
+
+ .link-text {
+    font-size: 1rem;
+ }
+
+
+ .link-text span, .advert-text p {
+    color: rgb(194, 189, 189);
+    display: block;
+ }
+
+ .link-text span {
+      font-size: 0.75rem;
+ }
+
+ .advert-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 820px;
+    font-size: 1.68rem;
+    text-align: center;
+    margin: auto;
+    font-weight: 300;
+    line-height: 1.45;
+    padding: 120px 0px;
+ }
+
+.separator {
+    width: 70px;
+    margin: 65px auto 0;
+    height: 1px;
+    background-color: rgb(194, 189, 189);
+}
+
+ .link-text:hover {
+    text-decoration: underline;
+ }
+
+ .black-background {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(12, 21, 26);
+ }
+
+ .advert-text {
+    display: flex;
+ }
+
+ .bottom-text {
+   display: grid;
+   grid-template-columns: repeat(2, 570px);
+   justify-content: center;
+   row-gap: 1.5rem;
+   margin: 10rem auto 7rem;
+ }
+
+ .white-section {
+   margin: 0rem 0rem 7rem;
+ }
+
+ .bottom-text-1 {
+   font-size: 2.3rem;
+   margin: 1rem 3rem;
+   padding: 1rem 0rem;
+   border-top: 1px solid red;
+ }
+
+ .purchase-section {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   justify-content: center;
+   margin: 4rem;
+   align-items: center;
+ }
+
+
+ .purchase-section button {
+   border: 1px solid #007AFF;
+   padding: 0.75rem 2.5rem;
+   color: #007AFF;
+   font-weight: bold;
+   background-color: white;
+   border-radius: 3px;
+   font-size: 0.8rem;
+ }
+
+  .purchase-section button:hover {
+   color: white;
+   background-color: #007AFF;
+}
+
+footer {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: rgb(12, 21, 26);
+   color: rgb(194, 189, 189);
+   font-weight: bold;
+   font-size: 0.75rem;
+   padding: 1rem 20%;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.author {
+  color: #007AFF;
+}
